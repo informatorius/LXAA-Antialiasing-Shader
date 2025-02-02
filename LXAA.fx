@@ -30,7 +30,7 @@ sampler BackBuffer {
 	MagFilter = LINEAR;
 	SRGBTexture = false;
 };
-static const float2 RCP2 = float2(BUFFER_RCP_WIDTH * 2,BUFFER_RCP_HEIGHT * 2);
+static const float2 RCP2 = float2(BUFFER_RCP_WIDTH, BUFFER_RCP_HEIGHT);
 /*--------------------------------------------------------------------------*/
 #define tsp(p) 			float4(p, 0.0, 0.0)
 #define GetLuma(c)		dot(c, float3(0.299, 0.587, 0.114))
